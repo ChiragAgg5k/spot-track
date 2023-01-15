@@ -1,0 +1,67 @@
+/* This is the CSS file for the survey form project. */
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: #f5f6f7;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input {
+    margin: 0.2rem 0.2;
+}
+
+fieldset {
+    width: 70%;
+    padding: 1%;
+    margin: 0 auto;
+}
+
+textarea {
+    columns: 2;
+    resize: none;
+    vertical-align: middle;
+}
+
+.radio_choice {
+    display: inline-block;
+}
+
+.submit_button {
+    background-color: #f5f6f7;
+    color: #1b1b32;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 10rem;
+}
