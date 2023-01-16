@@ -40,13 +40,38 @@ input {
 fieldset {
     width: 70%;
     padding: 1%;
-    margin: 0 auto;
+    margin: 0.1rem auto;
+    border-radius: 1rem;
+    border: 1px solid #f5f6f7;
 }
 
 textarea {
     columns: 2;
     resize: none;
     vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #f5f6f7;
+}
+
+select {
+    border-radius: 5px;
+    border: 1px solid #f5f6f7;
+    cursor: pointer;
+}
+
+a {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #f5f6f7;
 }
 
 .radio_choice {
@@ -64,4 +89,10 @@ textarea {
     cursor: pointer;
     height: 2.5rem;
     width: 10rem;
+    transition: 0.3s;
+}
+
+.submit_button:hover {
+    background-color: #484888;
+    color: #f5f6f7;
 }
