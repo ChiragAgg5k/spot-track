@@ -10,7 +10,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #1b1b32;
-    background-image: url('background.jpg');
+    background-image: url('assets/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
