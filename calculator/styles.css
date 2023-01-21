@@ -33,6 +33,11 @@ button:active {
     background-color: #c8c8c8;
 }
 
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .container {
     border-radius: 12px;
     box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
@@ -49,17 +54,16 @@ button:active {
     background-color: #222222;
     color: #fff;
     text-align: right;
-    padding-right: 10px;
 }
 
-.container__tiles {
+.container__keys {
     background-color: #999;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border-radius: 10px;
 }
 
-.container__tiles>* {
+.container__keys>* {
     background-color: #fff;
     position: relative;
     text-align: center;

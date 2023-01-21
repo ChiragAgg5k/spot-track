@@ -25,5 +25,6 @@
             "document"
         ],
         "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    },
+    "eslint.enable": true,
 }

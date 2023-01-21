@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <title>Calculator</title>
 </head>
 
 <body>
     <div class="container">
         <div class="container__display">0</div>
-        <div class="container__tiles">
-            <button>+</button>
-            <button>-</button>
-            <button>&times;</button>
-            <button>&div;</button>
+        <div class="container__keys">
+            <button data-action="add">+</button>
+            <button data-action="subtract">-</button>
+            <button data-action="multiply">&times;</button>
+            <button data-action="divide">&div;</button>
             <button>7</button>
             <button>8</button>
             <button>9</button>
@@ -27,9 +28,9 @@
             <button>2</button>
             <button>3</button>
             <button>0</button>
-            <button>.</button>
-            <button>AC</button>
-            <button class="tiles--equal">=</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clear">AC</button>
+            <button data-action="equals" class="tiles--equal">=</button>
         </div>
     </div>
 </body>
