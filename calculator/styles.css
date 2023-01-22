@@ -54,6 +54,7 @@ button:focus {
     background-color: #222222;
     color: #fff;
     text-align: right;
+    padding: 20px;
 }
 
 .container__keys {
