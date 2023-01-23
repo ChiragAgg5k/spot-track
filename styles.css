@@ -1,15 +1,54 @@
+html {
+    height: 100%;
+    background: linear-gradient(#6dd5ed, #2193b0);
+}
+
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
-    color: #000;
-    margin: 0 0 0.5em 0;
+    color: #023745;
+    margin: 0;
+    padding: 1em 0;
 }
 
 body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     line-height: 1.5em;
-    color: #000;
-    background: #fff;
+    text-align: center;
+}
+
+p {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #03242d;
+}
+
+a {
+    display: block;
+    padding: 0.5%;
+    width: 50%;
+    transition: 200ms;
+    color: #03242d;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: #176f82;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #104d5b;
+    color: white;
     text-align: center;
 }
