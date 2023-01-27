@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #1D1D1D;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  position: relative;
+}
+
+nav ul {
+  position: fixed;
+  width: 241px;
+  height: 100%;
+  background-color: black;
+  font-size: 1.1em;
+  overflow: auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+nav ul li {
+  display: flex;
+  width: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+.logo img {
+  max-width: 131px;
+  height: 40px;
+  padding-left: -10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.navicons img {
+  width: 100%;
+  max-width: 24px;
+  height: 24px;
+}
+
+.container {
+  width: 100% - 241px;
+  min-height: 85vh;
+  margin-left: 241px;
+  background-color: #121212;
+
+}
+
+.bottom {
+  position: fixed;
+  height: 15vh;
+  width: 100vw;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progressBar {
+  width: 80vw;
+}

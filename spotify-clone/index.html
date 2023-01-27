@@ -2,14 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    Work in Progres...
+  <nav>
+    <ul>
+      <li class="logo">
+        <img src="assets/spotify_logo.png" alt="SpotifyLogo">
+      </li>
+      <li class="navicons"><img src="assets/home.png" alt="Home"> Home</li>
+      <li class="navicons"><img src="assets/about.png" alt="About"> About</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="playlistBox"></div>
+    <div class="songlistBox"></div>
+
+  </div>
+
+  <div class="bottom">
+    <input type="range" name="progressBar" id="progressBar" min="0" max="100">
+  </div>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
