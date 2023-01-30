@@ -19,6 +19,7 @@ nav ul {
   position: fixed;
   width: 241px;
   height: 100%;
+  color: #B2B2B2;
   background-color: black;
   font-size: 1.1em;
   overflow: auto;
@@ -40,7 +41,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  color: #878787;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -50,12 +51,11 @@ nav ul li:hover {
   padding-left: -10px;
   padding-top: 10px;
   padding-bottom: 20px;
+  transition: 100ms;
 }
 
-.navicons img {
-  width: 100%;
-  max-width: 24px;
-  height: 24px;
+.navicons {
+  font-size: 17px;
 }
 
 .container {
@@ -64,6 +64,17 @@ nav ul li:hover {
   margin-left: 241px;
   background-color: #121212;
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  nav ul {
+    display: none;
+  }
 }
 
 .bottom {
@@ -81,10 +92,14 @@ nav ul li:hover {
 
 .icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   max-width: 500px;
   margin-top: 10px;
+}
+
+.icons .fa-solid {
+  margin: 0 3vw;
 }
 
 .icons .fa-solid {
@@ -100,8 +115,8 @@ nav ul li:hover {
 }
 
 .icons .fa-regular {
-  font-size: 2em;
-  color: #878787;
+  font-size: 2.5em;
+  color: #fff;
   transition: 100ms;
 }
 
@@ -112,7 +127,7 @@ nav ul li:hover {
 }
 
 #progressBar {
-  width: 80vw;
+  width: 50vw;
 }
 
 .playlistBox {

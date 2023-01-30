@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify Clone</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/spotify-logo-notext.png">
   <script src="https://kit.fontawesome.com/cbae3ce0e6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,8 +19,8 @@
           <img src="assets/spotify_logo.png" alt="SpotifyLogo">
         </a>
       </li>
-      <li class="navicons"><img src="assets/home.png" alt="Home"> Home</li>
-      <li class="navicons"><img src="assets/about.png" alt="About"> About</li>
+      <li class="navicons"><i class="fa-solid fa-house"></i>Home</li>
+      <li class="navicons"><i class="fa-solid fa-circle-info"></i>About</li>
     </ul>
   </nav>
 
@@ -39,11 +40,11 @@
 
         <div class="sno_artistimg">
           <span class="sno">1.</span>
-          <img src="assets/artist-covers/neffex.jpg" alt="1">
+          <img src="assets/artist-covers/volcano.jpeg" alt="1">
         </div>
 
-        <span>Rumors</span>
-        <span>05:34</span>
+        <span>Jim Yosef - Volcano (feat. Scarlett) [NCS Release]</span>
+        <span>02:40</span>
         <span class="songListPlay">
           <i class="fa-regular fa-circle-play fa-xl"></i>
         </span>
@@ -55,10 +56,10 @@
   <div class="bottom">
     <div class="icons">
       <i class="fa-solid fa-backward-step fa-xl"></i>
-      <i class="fa-regular fa-circle-play fa-2xl"></i>
+      <i class="fa-regular fa-circle-play fa-2xl" id="masterPlay"></i>
       <i class="fa-solid fa-forward-step fa-xl"></i>
     </div>
-    <input type="range" name="progressBar" id="progressBar" min="0" max="100">
+    <input type="range" name="progressBar" id="progressBar" min="0" max="100" value="0">
   </div>
 
   <script src="script.js"></script>

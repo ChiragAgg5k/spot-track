@@ -26,8 +26,7 @@
         ],
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "emmet.triggerExpansionOnTab": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
