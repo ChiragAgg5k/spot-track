@@ -5,24 +5,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
   <link rel="stylesheet" href="styles.css">
-  <title>Web Projects</title>
+  <script src="https://kit.fontawesome.com/cbae3ce0e6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <h1>Web Projects</h1>
-  <p>
-    This is a collection of web projects I have worked on while learning web development. Many of them are really
-    basic and beginner friendly. I will be adding more projects as I learn more.
-  </p>
-  <a href="registration-form/index.html">registration-form</a>
-  <a href="loading-screen/index.html">loading-screen</a>
-  <a href="calculator/index.html">calculator</a>
-  <a href="spotify-clone/index.html">spotify-clone</a>
-</body>
+  <nav>
+    <ul>
+      <li class="logo">
+        <a href="index.html">
+          <img src="assets/spotify_logo.png" alt="SpotifyLogo">
+        </a>
+      </li>
+      <li class="navicons"><img src="assets/home.png" alt="Home"> Home</li>
+      <li class="navicons"><img src="assets/about.png" alt="About"> About</li>
+    </ul>
+  </nav>
 
-<footer>
-  <a href="https://github.com/ChiragAgg5k/web-projects" class="footer">Back to repository</a>
-</footer>
+  <div class="container">
+
+    <div class="playlistBox">
+      <i class="fa-solid fa-guitar"></i>
+      <div class="playlistHeader">
+        <h5>PLAYLIST</h5>
+        <h1>Hope-Less</h1>
+        <h5>Chirag Aggarwal</h5>
+      </div>
+    </div>
+
+    <div class="songlistBox">
+      <div class="songItem">
+
+        <div class="sno_artistimg">
+          <span class="sno">1.</span>
+          <img src="assets/artist-covers/neffex.jpg" alt="1">
+        </div>
+
+        <span>Rumors</span>
+        <span>05:34</span>
+        <span class="songListPlay">
+          <i class="fa-regular fa-circle-play fa-xl"></i>
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bottom">
+    <div class="icons">
+      <i class="fa-solid fa-backward-step fa-xl"></i>
+      <i class="fa-regular fa-circle-play fa-2xl"></i>
+      <i class="fa-solid fa-forward-step fa-xl"></i>
+    </div>
+    <input type="range" name="progressBar" id="progressBar" min="0" max="100">
+  </div>
+
+  <script src="script.js"></script>
+</body>
 
 </html>

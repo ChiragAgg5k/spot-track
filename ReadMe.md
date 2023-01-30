@@ -1,5 +1,3 @@
-# Web Projects
+# Spotify Clone
 
-https://chiragagg5k.github.io/web-projects/
-
-This is a collection of web projects I worked on while learning web development. The projects are hosted on GitHub Pages (link above).
+This is a Spotify clone made with HTML, CSS and JavaScript. Work in progress.
