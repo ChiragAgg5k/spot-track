@@ -66,17 +66,6 @@ nav ul li:hover {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  nav ul {
-    display: none;
-  }
-}
-
 .bottom {
   position: fixed;
   bottom: 0;
@@ -137,7 +126,7 @@ nav ul li:hover {
   justify-content: left;
   height: 30vh;
   max-height: 500px;
-  min-height: 340px;
+  min-height: 250px;
   width: 100%;
   border-bottom: #fff 1px solid;
 }
@@ -151,7 +140,7 @@ nav ul li:hover {
 }
 
 .playlistHeader h1 {
-  font-size: 7vw;
+  font-size: 9vw;
 }
 
 .fa-guitar {
@@ -164,10 +153,9 @@ nav ul li:hover {
 .songlistBox {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   height: 100%;
   width: 100%;
-  padding-left: 30px;
 }
 
 .songItem {
@@ -191,17 +179,44 @@ nav ul li:hover {
   cursor: pointer;
 }
 
-.sno_artistimg {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 10%;
-}
 
 .songItem img {
-  width: 100%;
-  max-width: 50px;
+  width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  nav ul {
+    width: 100%;
+    height: 67.5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navicons {
+    display: none;
+  }
+
+  .logo img {
+    max-width: 131px;
+    height: 40px;
+    padding-left: -10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .fa-guitar {
+    font-size: 96px;
+  }
+
+  .songItem {
+    font-size: 13px;
+  }
 }
