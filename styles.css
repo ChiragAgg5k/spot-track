@@ -63,7 +63,8 @@ nav ul li:hover {
   min-height: 100vh;
   margin-left: 241px;
   background-color: #121212;
-  overflow-x: hidden;
+  height: 100vh;
+  overflow-x: auto;
 }
 
 .bottom {
@@ -169,6 +170,10 @@ nav ul li:hover {
   color: #000;
   margin: 12px 0;
   border-radius: 10px;
+}
+
+.songItem:first-child {
+  margin-top: 30px;
 }
 
 .songItem:hover {

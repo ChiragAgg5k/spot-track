@@ -13,9 +13,14 @@ let songs = [
     filePath: "assets/songs/MADZI - What You Gonna Do [NCS Release].mp3",
     coverPath: "assets/artist-covers/madzi.png"},
 
-    {songName: "Andrew A & VIANI - Lost [NCS Release]",
+    {songName: "Andrew A & VIANI - Lost",
     filePath: "assets/songs/Andrew A & VIANI - Lost [NCS Release].mp3",
     coverPath: "assets/artist-covers/lost.png"},
+
+    {songName: "Yonexx & lunar - Need You",
+    filePath: "assets/songs/Yonexx & lunar - Need You [NCS Release].mp3",
+    coverPath: "assets/artist-covers/need_you.png"},
+
 ]
 let audioElement = new Audio(songs[songIndex].filePath);
 let masterPlay = document.getElementById("masterPlay");
