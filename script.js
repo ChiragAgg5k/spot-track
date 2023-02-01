@@ -1,13 +1,21 @@
 // Initialize Variables
 let songIndex = 0;
 let songs = [
-    {songName: "Jim Yosef - Volcano (feat. Scarlett) [NCS Release]",
+    {songName: "Jim Yosef - Volcano (feat. Scarlett)",
     filePath: "assets/songs/Jim Yosef - Volcano (feat. Scarlett) [NCS Release].mp3",
     coverPath: "assets/artist-covers/volcano.jpeg"},
 
-    {songName: "Jo. Cohen - Sympathy (feat. Coral Oulu) [NCS Release]",
+    {songName: "Jo. Cohen - Sympathy (feat. Coral Oulu)",
     filePath: "assets/songs/Jo. Cohen - Sympathy (feat. Coral Oulu) [NCS Release].mp3",
     coverPath: "assets/artist-covers/sympathy.jpeg"},
+
+    {songName: "MADZI - What You Gonna Do",
+    filePath: "assets/songs/MADZI - What You Gonna Do [NCS Release].mp3",
+    coverPath: "assets/artist-covers/madzi.png"},
+
+    {songName: "Andrew A & VIANI - Lost [NCS Release]",
+    filePath: "assets/songs/Andrew A & VIANI - Lost [NCS Release].mp3",
+    coverPath: "assets/artist-covers/lost.png"},
 ]
 let audioElement = new Audio(songs[songIndex].filePath);
 let masterPlay = document.getElementById("masterPlay");
@@ -34,7 +42,8 @@ function pauseSong(){
 function previousSong(){
     if(songIndex > 0){
         songIndex--;
-    }
+    }else songIndex = songs.length - 1;
+
     audioElement.src = songs[songIndex].filePath;
     audioElement.load();
     playSong();
@@ -44,18 +53,28 @@ function previousSong(){
 function nextSong(){
     if(songIndex < songs.length - 1){
         songIndex++;
-    }
+    }else songIndex = 0;
+
     audioElement.src = songs[songIndex].filePath;
     audioElement.load();
     playSong();
     progressBar.value = 0;
 }
 
+// Keyboard Event Listener
 window.addEventListener('keydown', (e) => {
     if(e.keyCode == 32){ // Spacebar
         if(audioElement.paused || audioElement.currentTime <= 0) playSong();
         else pauseSong();
     } 
+
+    if(e.keyCode == 37){ // Left Arrow
+        previousSong();
+    }
+
+    if(e.keyCode == 39){ // Right Arrow
+        nextSong();
+    }
 })
 
 // Play/Pause Button Event Listener
@@ -68,7 +87,9 @@ masterPlay.addEventListener('click',()=>{
 audioElement.addEventListener('timeupdate',()=>{
     
     let progress = parseInt(audioElement.currentTime * 100 / audioElement.duration);
-
+    if(progress == 100){
+        nextSong();
+    }
     progressBar.value = progress;
 });
 

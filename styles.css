@@ -123,10 +123,8 @@ nav ul li:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
-  height: 30vh;
-  max-height: 500px;
-  min-height: 250px;
+  justify-content: center;
+  height: 40vh;
   width: 100%;
   border-bottom: #fff 1px solid;
 }
@@ -136,11 +134,11 @@ nav ul li:hover {
   flex-direction: column;
   height: 10vh;
   width: 100%;
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .playlistHeader h1 {
-  font-size: 9vw;
+  font-size: 10vh;
 }
 
 .fa-guitar {
@@ -218,5 +216,9 @@ nav ul li:hover {
 
   .songItem {
     font-size: 13px;
+  }
+
+  .playlistHeader h1 {
+    font-size: 9vw;
   }
 }
