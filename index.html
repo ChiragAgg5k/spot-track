@@ -2,114 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spotify Clone</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/spotify-logo-notext.png">
-  <script src="https://kit.fontawesome.com/cbae3ce0e6.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li class="logo">
-        <a href="index.html">
-          <img src="assets/spotify_logo.png" alt="SpotifyLogo">
-        </a>
-      </li>
-      <li class="navicons"><i class="fa-solid fa-house"></i>Home</li>
-      <li class="navicons"><i class="fa-solid fa-circle-info"></i>About</li>
-    </ul>
-  </nav>
-
-  <div class="container">
-
-    <div class="playlistBox">
-      <i class="fa-solid fa-guitar"></i>
-      <div class="playlistHeader">
-        <h4>PLAYLIST</h4>
-        <h1>Hope-Less</h1>
-        <h5>Chirag Aggarwal</h5>
-      </div>
-    </div>
-
-    <div class="songlistBox">
-
-      <div class="songItem">
-
-        <span class="sno">1.</span>
-        <img src="assets/artist-covers/volcano.jpeg" alt="1">
-
-        <span>Jim Yosef - Volcano (feat. Scarlett)</span>
-        <span>02:40</span>
-        <span class="songListPlay">
-          <i class="fa-regular fa-circle-play fa-xl"></i>
-        </span>
-      </div>
-
-      <div class="songItem">
-
-        <span class="sno">2.</span>
-        <img src="assets/artist-covers/sympathy.jpeg" alt="1">
-
-        <span>Jo. Cohen - Sympathy (feat. Coral Oulu)</span>
-        <span>02:33</span>
-        <span class="songListPlay">
-          <i class="fa-regular fa-circle-play fa-xl"></i>
-        </span>
-      </div>
-
-      <div class="songItem">
-
-        <span class="sno">3.</span>
-        <img src="assets/artist-covers/madzi.png" alt="1">
-
-        <span>MADZI - What You Gonna Do? </span>
-        <span>03:05</span>
-        <span class="songListPlay">
-          <i class="fa-regular fa-circle-play fa-xl"></i>
-        </span>
-      </div>
-
-      <div class="songItem">
-
-        <span class="sno">4.</span>
-        <img src="assets/artist-covers/lost.png" alt="1">
-
-        <span>Andrew A & VIANI - Lost</span>
-        <span>02:52</span>
-        <span class="songListPlay">
-          <i class="fa-regular fa-circle-play fa-xl"></i>
-        </span>
-      </div>
-
-      <div class="songItem">
-
-        <span class="sno">5.</span>
-        <img src="assets/artist-covers/need_you.png" alt="1">
-
-        <span>Yonexx & lunar - Need You</span>
-        <span>02:49</span>
-        <span class="songListPlay">
-          <i class="fa-regular fa-circle-play fa-xl"></i>
-        </span>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="bottom">
-    <div class="icons">
-      <i class="fa-solid fa-backward-step fa-xl" id="backButton"></i>
-      <i class="fa-regular fa-circle-play fa-2xl" id="masterPlay"></i>
-      <i class="fa-solid fa-forward-step fa-xl" id="forwardButton"></i>
-    </div>
-    <input type="range" name="progressBar" id="progressBar" min="0" max="100" value="0">
-  </div>
-
-  <script src="script.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

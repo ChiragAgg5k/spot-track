@@ -1,32 +1,18 @@
 {
-    "html.suggest.html5": true,
-    "html.autoClosingTags": true,
     "editor.formatOnSave": true,
-    "[html]": {
-        "editor.suggest.insertMode": "replace",
-        "gitlens.codeLens.scopes": [
-            "document"
-        ],
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
     "[css]": {
-        "editor.suggest.insertMode": "replace",
-        "gitlens.codeLens.scopes": [
-            "document"
-        ],
         "editor.defaultFormatter": "vscode.css-language-features"
     },
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace",
-        "gitlens.codeLens.scopes": [
-            "document"
-        ],
-        "editor.defaultFormatter": "vscode.json-language-features"
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[svg]": {
+        "editor.defaultFormatter": "jock.svg"
+    },
 }
