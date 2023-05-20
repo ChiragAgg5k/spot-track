@@ -1,12 +1,13 @@
-import './App.css'
+import './App.css';
+import Login from './Login';
 
 function App() {
 
   return (
-    <>
-    <h1>Test</h1>
-    </>
-  )
+    <div>
+    <Login/>
+    </div>
+  );
 }
 
 export default App
