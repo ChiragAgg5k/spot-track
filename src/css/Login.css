@@ -24,6 +24,15 @@
 .login>img {
     width: 90%;
     max-width: 600px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.login>img:hover {
+    transform: scale(1.05);
+}
+
+.login>img:active {
+    transform: scale(1);
 }
 
 .login>a {
