@@ -1,7 +1,7 @@
 import Body from "./Body";
 import Footer from "./Footer";
+import './HomePage.css';
 import SideBar from "./SideBar";
-import './css/HomePage.css';
 
 function Hompage({ spotify }) {
     console.log(spotify);

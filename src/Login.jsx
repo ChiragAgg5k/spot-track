@@ -1,5 +1,5 @@
 import spotify_logo from './assets/Spotify_Logo_CMYK_White.png';
-import './css/Login.css';
+import './Login.css';
 import { loginURL } from './login_logic';
 
 export default function Login() {
