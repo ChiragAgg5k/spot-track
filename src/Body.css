@@ -8,3 +8,8 @@
     flex: 0.7;
     min-width: 450px;
 }
+
+.body>.greeting>h1 {
+    margin-bottom: 10px;
+    color: white;
+}

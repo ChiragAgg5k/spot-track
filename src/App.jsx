@@ -9,7 +9,7 @@ import { getTokenFromURL } from './login_logic';
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [{ user, token }, dispatch] = useDataLayerValue();
+  const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     const hash = getTokenFromURL();
@@ -33,12 +33,17 @@ function App() {
         })
 
       });
+
+      spotify.getUserPlaylists().then((playLists) => {
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playLists: playLists,
+        })
+      })
     }
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  console.log("token = ", token);
-  console.log("user = ", user);
 
   return (
     <div className='app'>
