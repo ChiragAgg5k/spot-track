@@ -1,7 +1,10 @@
+import './css/SideBar.css'
+
 export default function SideBar() {
     return (
         <div className="sidebar">
-            <h1>I am a sidebar</h1>
+            <div className="sidebar__top"></div>
+            <div className="sidebar__bottom"></div>
         </div>
     )
 }

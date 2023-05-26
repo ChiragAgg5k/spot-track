@@ -1,0 +1,10 @@
+.body {
+    margin: 9px;
+    border-radius: 10px;
+    background: linear-gradient(#222222, #121212);
+    color: white;
+    padding: 30px;
+    overflow: hidden;
+    flex: 0.7;
+    min-width: 450px;
+}

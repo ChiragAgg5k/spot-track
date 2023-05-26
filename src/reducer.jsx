@@ -3,8 +3,6 @@ export const initialState = {
     playlists: [],
     playing: false,
     item: null,
-
-    //! REMOVE AFTER FINISHING DEVELOPMENT
     token: null,
 }
 

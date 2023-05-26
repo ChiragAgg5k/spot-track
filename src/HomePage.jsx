@@ -1,12 +1,19 @@
+import Body from "./Body";
+import Footer from "./Footer";
+import SideBar from "./SideBar";
+import './css/HomePage.css';
 
-export default function Hompage() {
+function Hompage({ spotify }) {
+    console.log(spotify);
     return (
         <div className="homepage">
             <div className="homepage__body">
-                <h1>Work in Progress...</h1>
-                {/* <Body /> */}
+                <SideBar />
+                <Body />
             </div>
-            {/* <SideBar /> */}
+            <Footer />
         </div>
     )
 }
+
+export default Hompage;
