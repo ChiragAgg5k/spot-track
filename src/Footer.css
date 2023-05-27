@@ -12,6 +12,32 @@
 
 .footer__left {
     flex: 0.3;
+    display: flex;
+    align-items: center;
+}
+
+.footer__left>img {
+    width: 50px;
+}
+
+.footer__left>.song {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.footer__left>.song>h1 {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.footer__left>.song>h2 {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.footer__left>i {
+    margin-left: 15px;
 }
 
 .footer__center {
@@ -21,13 +47,55 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 320px;
+    max-width: 370px;
 }
 
 .footer__center>i {
+    color: #b3b3b3;
     font-size: 20px;
+}
+
+.footer__center>i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.footer__center>i:nth-child(3) {
+    color: white;
+    font-size: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__center>i:nth-child(3):hover {
+    scale: 1.2;
 }
 
 .footer__right {
     flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer__right>input {
+    width: 120px;
+    height: 8px;
+    accent-color: white;
+    margin-right: 10px;
+}
+
+.footer__right>input:hover {
+    accent-color: #65D26D;
+    cursor: pointer;
+}
+
+.footer__right>i {
+    color: #b3b3b3;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer__right>i:hover {
+    color: white;
+    cursor: pointer;
 }
