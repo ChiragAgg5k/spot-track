@@ -37,8 +37,8 @@
 
 .column_headers {
     margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
     color: #b3b3b3;
     font-size: 0.9rem;
 
@@ -53,4 +53,8 @@
     background-color: #b3b3b3;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.empty_space {
+    height: 100px;
 }

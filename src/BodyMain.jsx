@@ -5,6 +5,7 @@ import SongRow from './SongRow';
 export default function BodyMain() {
 
     const [{ tracks }] = useDataLayerValue();
+    console.log(JSON.stringify(tracks));
 
     return (
         <div className="body_main">
@@ -23,13 +24,13 @@ export default function BodyMain() {
 
             <div className="songs">
                 {
-                    tracks?.items?.map((track) => {
-                        return (
-                            <SongRow key={track.track.id} track={track.track} />
-                        )
-                    })
+                    tracks?.items?.map((item, index) => (
+                        <SongRow key={index} sno={index} track={item.track} added_at={item.added_at} />
+                    ))
                 }
             </div>
+
+            <div className="empty_space"></div>
 
         </div>
     )
