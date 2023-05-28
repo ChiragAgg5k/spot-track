@@ -6,7 +6,8 @@ import Hompage from './HomePage';
 import Login from './Login';
 import { getTokenFromURL } from './login_logic';
 
-const spotify = new SpotifyWebApi();
+// eslint-disable-next-line react-refresh/only-export-components
+export const spotify = new SpotifyWebApi();
 
 function App() {
   const [{ token }, dispatch] = useDataLayerValue();

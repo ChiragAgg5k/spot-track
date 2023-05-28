@@ -4,6 +4,8 @@ export const initialState = {
     playing: false,
     item: null,
     token: null,
+    tracks: [],
+    selectedPlayList: null,
 }
 
 const reducer = (state, action) => {
@@ -24,6 +26,18 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 playLists: action.playLists
+            }
+
+        case 'SET_SELECTED_PLAYLIST':
+            return {
+                ...state,
+                selectedPlayList: action.selectedPlayList
+            }
+
+        case 'SET_TRACKS':
+            return {
+                ...state,
+                tracks: action.tracks
             }
 
         default:

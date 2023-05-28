@@ -4,11 +4,18 @@ import './SideBar.css';
 
 export default function SideBar() {
 
-    const [{ playLists }] = useDataLayerValue();
+    const [{ playLists }, dispatch] = useDataLayerValue();
     return (
         <div className="sidebar">
             <div className="sidebar__top">
-                <div className="row">
+                <div className="row" onClick={
+                    () => {
+                        dispatch({
+                            type: "SET_SELECTED_PLAYLIST",
+                            selectedPlayList: null,
+                        })
+                    }
+                }>
                     <i className="fa-solid fa-house"></i>
                     <p>Home</p>
                 </div>
@@ -20,7 +27,7 @@ export default function SideBar() {
             <div className="sidebar__bottom">
                 <h2>Your playlists</h2>
                 {playLists?.items?.map((p) => {
-                    return <PlayList key={p.id} title={p.name} img={p.images[0]} />
+                    return <PlayList key={p.id} playList={p} />
                 })}
             </div>
         </div>
