@@ -1,14 +1,16 @@
 .playList {
     display: flex;
     align-items: center;
+    border-radius: 5px;
+    margin: 10px;
 }
 
 .playList:hover {
-    background-color: #f5f5f5;
     cursor: pointer;
+    background-color: #282828;
 }
 
 .playList>img {
     width: 70px;
-    margin: 10px;
+    margin: 5px;
 }

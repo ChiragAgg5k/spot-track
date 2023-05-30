@@ -1,8 +1,12 @@
 export const initialState = {
     user: null,
     playLists: [],
-    playing: false,
-    item: null,
+    item: new Audio(),
+    currentlyPlaying: {
+        name: null,
+        artist: null,
+        albumcover: null,
+    },
     token: null,
     tracks: [],
     selectedPlayList: null,
@@ -38,6 +42,30 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 tracks: action.tracks
+            }
+
+        case 'SET_CURRENTLY_PLAYING':
+            return {
+                ...state,
+                currentlyPlaying: action.currentlyPlaying
+            }
+
+        case 'SET_VOLUME':
+            state.item.volume = action.volume;
+            return {
+                ...state,
+                volume: action.volume
+            }
+
+        case 'SET_PLAYING':
+            if (action.playing) {
+                state.item.play();
+            } else {
+                state.item.pause();
+            }
+            return {
+                ...state,
+                playing: action.playing
             }
 
         default:

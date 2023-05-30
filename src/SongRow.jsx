@@ -1,9 +1,11 @@
+import { useDataLayerValue } from './DataLayer';
 import './SongRow.css';
 
 export default function SongRow({ sno, track, added_at }) {
 
     const duration = msToMinutes(track.duration_ms);
     const dateAdded = howLongAgoInWeeks(added_at);
+    const [{ item }, dispatch] = useDataLayerValue();
 
     function msToMinutes(ms) {
         let minutes = Math.floor(ms / 60000);
@@ -36,7 +38,25 @@ export default function SongRow({ sno, track, added_at }) {
     }
 
     return (
-        <div className="song_row">
+        <div className="song_row" onClick={
+            () => {
+                item.pause();
+                item.src = track.preview_url;
+                item.play();
+                dispatch({
+                    type: 'SET_CURRENTLY_PLAYING',
+                    currentlyPlaying: {
+                        name: track.name,
+                        artist: track.artists[0].name,
+                        albumcover: track.album.images[0].url,
+                    }
+                })
+                dispatch({
+                    type: 'SET_PLAYING',
+                    playing: true
+                })
+            }
+        }>
             <p>{sno + 1}</p>
             <div className="song_name">
                 <img src={track.album.images[0].url} alt="" />

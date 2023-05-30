@@ -4,12 +4,32 @@ import SongRow from './SongRow';
 
 export default function BodyMain() {
 
-    const [{ tracks }] = useDataLayerValue();
+    const [{ tracks, playing }, dispatch] = useDataLayerValue();
 
     return (
         <div className="body_main">
             <div className="play-pause_row">
-                <i className="fa-sharp fa-solid fa-circle-play"></i>
+                {
+                    (playing) ? (
+                        <i className="fa-solid fa-circle-pause" onClick={
+                            () => {
+                                dispatch({
+                                    type: 'SET_PLAYING',
+                                    playing: false
+                                })
+                            }
+                        }></i>
+                    ) : (
+                        <i className="fa-solid fa-circle-play" onClick={
+                            () => {
+                                dispatch({
+                                    type: 'SET_PLAYING',
+                                    playing: true
+                                })
+                            }
+                        }></i>
+                    )
+                }
                 <p>...</p>
             </div>
 

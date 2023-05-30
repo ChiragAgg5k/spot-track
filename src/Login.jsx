@@ -6,6 +6,8 @@ export default function Login() {
     return (
         <div className='login'>
             <img src={spotify_logo} alt="Spotify Logo" id='spotify-logo' />
+            <div>
+            </div>
             <a href={loginURL} className='not-selectable'>Login with Spotify</a>
         </div>
     );

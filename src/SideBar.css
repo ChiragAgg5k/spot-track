@@ -9,7 +9,7 @@
 
 .sidebar__top {
     height: 112px;
-    width: 29.5%;
+    width: 29.2%;
     min-width: 240px;
     border-radius: 10px;
     background-color: #121212;
@@ -49,12 +49,14 @@
     border-radius: 10px;
     margin-top: 10px;
     position: fixed;
-    width: 29.5%;
+    width: 29.2%;
     min-width: 240px;
     margin-top: 122px;
+    color: #b3b3b3;
 }
 
 .sidebar__bottom>h2 {
     margin: 20px;
+    color: #fff;
     font-size: 20px;
 }
