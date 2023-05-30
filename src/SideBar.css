@@ -4,18 +4,19 @@
     flex-direction: column;
     margin: 9px 0px 9px 9px;
     border-radius: 10px;
-    min-width: 360px;
-    height: 100vh;
+    min-width: 240px;
 }
 
 .sidebar__top {
     height: 112px;
-    width: inherit;
+    width: 29.5%;
+    min-width: 240px;
     border-radius: 10px;
     background-color: #121212;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    position: fixed;
 }
 
 .sidebar__top>.row {
@@ -47,6 +48,10 @@
     height: 100%;
     border-radius: 10px;
     margin-top: 10px;
+    position: fixed;
+    width: 29.5%;
+    min-width: 240px;
+    margin-top: 122px;
 }
 
 .sidebar__bottom>h2 {

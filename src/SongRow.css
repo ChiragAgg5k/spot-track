@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
     grid-template-rows: 1fr;
+    align-items: center;
 
     /* vertical padding */
     padding-top: 15px;
@@ -36,4 +37,24 @@
     width: 40px;
     height: 40px;
     margin-right: 20px;
+}
+
+@media (max-width: 1100px) {
+    .song_row {
+        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    }
+
+    #dateAdded {
+        display: none;
+    }
+}
+
+@media (max-width: 868px) {
+    .song_row {
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+    }
+
+    #album {
+        display: none;
+    }
 }

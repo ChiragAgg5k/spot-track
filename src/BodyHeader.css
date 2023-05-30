@@ -24,6 +24,11 @@
     font-size: 15px;
     border-radius: 50%;
     background-color: #181818;
+    color: #565656;
+}
+
+.body>.playlist_header>.top_row>span>i:hover {
+    cursor: not-allowed;
 }
 
 .body>.playlist_header>.top_row>.right_container {

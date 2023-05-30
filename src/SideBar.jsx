@@ -14,6 +14,10 @@ export default function SideBar() {
                             type: "SET_SELECTED_PLAYLIST",
                             selectedPlayList: null,
                         })
+                        dispatch({
+                            type: "SET_TRACKS",
+                            tracks: [],
+                        })
                     }
                 }>
                     <i className="fa-solid fa-house"></i>

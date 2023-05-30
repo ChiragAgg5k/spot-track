@@ -10,7 +10,6 @@ export default function BodyHeader() {
     var owner = (selectedPlayList?.owner) ? selectedPlayList.owner.display_name : "No owner";
     var image = (selectedPlayList?.images) ? selectedPlayList.images[0].url : default_playlist_icon;
 
-
     return (
         <div className="playlist_header">
 

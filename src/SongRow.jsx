@@ -42,8 +42,8 @@ export default function SongRow({ sno, track, added_at }) {
                 <img src={track.album.images[0].url} alt="" />
                 <p>{track.name}</p>
             </div>
-            <p>{track.album.name}</p>
-            <p>{dateAdded}</p>
+            <p id='album'>{track.album.name}</p>
+            <p id='dateAdded'>{dateAdded}</p>
             <p>{duration}</p>
         </div>
     )

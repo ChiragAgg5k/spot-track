@@ -6,7 +6,3 @@
   box-sizing: border-box;
   font-family: 'Varela Round', sans-serif;
 }
-
-*::-webkit-scrollbar {
-  display: none;
-}

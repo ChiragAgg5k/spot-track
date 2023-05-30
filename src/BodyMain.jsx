@@ -5,7 +5,6 @@ import SongRow from './SongRow';
 export default function BodyMain() {
 
     const [{ tracks }] = useDataLayerValue();
-    console.log(JSON.stringify(tracks));
 
     return (
         <div className="body_main">
@@ -13,11 +12,12 @@ export default function BodyMain() {
                 <i className="fa-sharp fa-solid fa-circle-play"></i>
                 <p>...</p>
             </div>
+
             <div className="column_headers">
                 <p>#</p>
                 <p>Title</p>
-                <p>Album</p>
-                <p>Date Added</p>
+                <p id="album">Album</p>
+                <p id='dateAdded'>Date Added</p>
                 <i className="fa-solid fa-clock"></i>
             </div>
             <div className="divider"></div>
