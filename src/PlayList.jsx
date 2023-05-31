@@ -17,10 +17,10 @@ export default function PlayList({ playList }) {
 					selectedPlayList: playList
 				});
 
-				spotify.getPlaylistTracks(playList.id).then((tracks) => {
+				spotify.getPlaylistTracks(playList.id).then((_tracks) => {
 					dispatch({
 						type: "SET_TRACKS",
-						tracks: tracks
+						tracks: _tracks
 					});
 				});
 
@@ -28,7 +28,7 @@ export default function PlayList({ playList }) {
 					playList.classList.remove("selected");
 				});
 
-				thisPlayList.classList.add("selected");
+				thisPlayList?.classList.add("selected");
 			}}>
 			{playList.images[0] ? (
 				<img src={playList.images[0]?.url} alt="" />
