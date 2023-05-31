@@ -5,6 +5,10 @@
 	margin: 10px;
 }
 
+.selected {
+	color: #fff;
+}
+
 .playList:hover {
 	cursor: pointer;
 	background-color: #282828;

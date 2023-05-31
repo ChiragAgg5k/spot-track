@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useDataLayerValue } from "./DataLayer";
 import "./SongRow.css";
 
@@ -5,6 +6,8 @@ export default function SongRow({ sno, track, added_at }) {
 	const duration = msToMinutes(track.duration_ms);
 	const dateAdded = howLongAgoInWeeks(added_at);
 	const [{ item }, dispatch] = useDataLayerValue();
+
+	const [trackName, setTrackName] = useState(track.name);
 
 	function msToMinutes(ms) {
 		let minutes = Math.floor(ms / 60000);
@@ -39,6 +42,16 @@ export default function SongRow({ sno, track, added_at }) {
 		<div
 			className="song_row"
 			onClick={() => {
+				if (track.preview_url === null) {
+					// temporarily set trackname to "No preview available"
+					setTrackName("No preview available");
+					setTimeout(() => {
+						setTrackName(track.name);
+					}, 1000);
+
+					return;
+				}
+
 				item.pause();
 				item.src = track.preview_url;
 				item.play();
@@ -59,7 +72,7 @@ export default function SongRow({ sno, track, added_at }) {
 			<i className="fa-solid fa-play"></i>
 			<div className="song_name">
 				<img src={track.album.images[0].url} alt="" />
-				<p>{track.name}</p>
+				<p>{trackName}</p>
 			</div>
 			<p id="album">{track.album.name}</p>
 			<p id="dateAdded">{dateAdded}</p>

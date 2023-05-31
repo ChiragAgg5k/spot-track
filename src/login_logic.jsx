@@ -1,5 +1,5 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
-const redirectUri = "https://spot-clonee.netlify.app/";
+const redirectUri = "http://localhost:5173/";
 const clientID = "bad1516ea77d4b47844ed51c387a3527";
 
 // scopes are the permissions that the user is giving to the app

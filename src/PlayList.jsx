@@ -4,10 +4,13 @@ import "./PlayList.css";
 
 export default function PlayList({ playList }) {
 	const [, dispatch] = useDataLayerValue();
+	const playLists = document.querySelectorAll(".playList");
+	const thisPlayList = document.getElementById(playList.id);
 
 	return (
 		<div
-			className="playList"
+			id={playList.id}
+			className={`playList`}
 			onClick={() => {
 				dispatch({
 					type: "SET_SELECTED_PLAYLIST",
@@ -20,6 +23,12 @@ export default function PlayList({ playList }) {
 						tracks: tracks
 					});
 				});
+
+				playLists.forEach((playList) => {
+					playList.classList.remove("selected");
+				});
+
+				thisPlayList.classList.add("selected");
 			}}>
 			{playList.images[0] ? (
 				<img src={playList.images[0]?.url} alt="" />
