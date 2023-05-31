@@ -1,13 +1,10 @@
-import BodyHeader from './BodyHeader';
-import BodyMain from './BodyMain';
+import BodyHeader from "./BodyHeader";
+import BodyMain from "./BodyMain";
 export default function Body() {
-
-    return (
-        <div className="body">
-
-            <BodyHeader />
-            <BodyMain />
-
-        </div >
-    )
+	return (
+		<div className="body">
+			<BodyHeader />
+			<BodyMain />
+		</div>
+	);
 }

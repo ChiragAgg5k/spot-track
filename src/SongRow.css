@@ -1,60 +1,72 @@
 .song_row {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
-    grid-template-rows: 1fr;
-    align-items: center;
+	display: grid;
+	grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+	grid-template-rows: 1fr;
+	align-items: center;
 
-    /* vertical padding */
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #A7A7A7;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-    transition: 0.2s ease-in;
+	/* vertical padding */
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #a7a7a7;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	transition: 0.2s ease-in;
+}
+
+.song_row > i {
+	display: none;
+}
+
+.song_row:hover > i {
+	display: block;
+}
+
+.song_row:hover > #index {
+	display: none;
 }
 
 .song_row:hover {
-    background-color: #282828;
-    cursor: pointer;
+	background-color: #282828;
+	cursor: pointer;
 }
 
-.song_row>p {
-    font-size: 0.9rem;
+.song_row > p {
+	font-size: 0.9rem;
 }
 
-.song_row>.song_name {
-    display: flex;
-    align-items: center;
+.song_row > .song_name {
+	display: flex;
+	align-items: center;
 }
 
-.song_row>.song_name>p {
-    color: white;
-    font-size: 1rem;
+.song_row > .song_name > p {
+	color: white;
+	font-size: 1rem;
 }
 
-.song_row>.song_name>img {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+.song_row > .song_name > img {
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
 }
 
 @media (max-width: 1100px) {
-    .song_row {
-        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
-    }
+	.song_row {
+		grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+	}
 
-    #dateAdded {
-        display: none;
-    }
+	#dateAdded {
+		display: none;
+	}
 }
 
 @media (max-width: 868px) {
-    .song_row {
-        grid-template-columns: 0.2fr 1fr 0.2fr;
-    }
+	.song_row {
+		grid-template-columns: 0.2fr 1fr 0.2fr;
+	}
 
-    #album {
-        display: none;
-    }
+	#album {
+		display: none;
+	}
 }

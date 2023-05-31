@@ -3,8 +3,7 @@ import Footer from "./Footer";
 import './HomePage.css';
 import SideBar from "./SideBar";
 
-function Hompage({ spotify }) {
-    console.log(spotify);
+function Hompage() {
     return (
         <div className="homepage">
             <div className="homepage__body">
