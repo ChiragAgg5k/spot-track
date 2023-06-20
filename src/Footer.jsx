@@ -1,6 +1,17 @@
 import { useState } from "react";
 import { useDataLayerValue } from "./DataLayer";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faForwardStep,
+	faRepeat,
+	faHeart,
+	faBackwardStep,
+	faShuffle,
+	faVolumeHigh,
+	faCirclePlay,
+	faCirclePause
+} from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
 	const [volume, setVolume] = useState(0.5);
@@ -29,39 +40,43 @@ function Footer() {
 						</div>
 					</>
 				)}
-				<i className="fa-regular fa-heart"></i>
+				<FontAwesomeIcon icon={faHeart} id="icon" />
 			</div>
 
 			<div className="footer__center">
-				<i className="fa-solid fa-shuffle"></i>
-				<i className="fa-solid fa-backward-step"></i>
+				<FontAwesomeIcon icon={faShuffle} id="icon" />
+				<FontAwesomeIcon icon={faBackwardStep} id="icon" />
 
 				{playing ? (
-					<i
-						className="fa-solid fa-circle-pause"
+					<FontAwesomeIcon
+						icon={faCirclePause}
+						id="icon"
 						onClick={() => {
 							dispatch({
 								type: "SET_PLAYING",
 								playing: false
 							});
-						}}></i>
+						}}
+					/>
 				) : (
-					<i
-						className="fa-solid fa-circle-play"
+					<FontAwesomeIcon
+						icon={faCirclePlay}
+						id="icon"
 						onClick={() => {
 							dispatch({
 								type: "SET_PLAYING",
 								playing: true
 							});
-						}}></i>
+						}}
+					/>
 				)}
 
-				<i className="fa-solid fa-forward-step"></i>
-				<i className="fa-solid fa-repeat"></i>
+				<FontAwesomeIcon icon={faForwardStep} id="icon" />
+				<FontAwesomeIcon icon={faRepeat} id="icon" />
 			</div>
 
 			<div className="footer__right">
-				<i className="fa-solid fa-volume-high"></i>
+				<FontAwesomeIcon icon={faVolumeHigh} id="icon" />
 				<input
 					type="range"
 					min={0}

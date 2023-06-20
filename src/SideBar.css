@@ -37,7 +37,7 @@
 	cursor: pointer;
 }
 
-.sidebar__top > .row > i {
+.sidebar__top > .row > #icon {
 	font-size: 22px;
 	margin-right: 10px;
 	margin: 10px;

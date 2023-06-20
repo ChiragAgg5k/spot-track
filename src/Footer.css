@@ -37,7 +37,7 @@
 	color: #b3b3b3;
 }
 
-.footer__left > i {
+.footer__left > #icon {
 	margin-left: 15px;
 }
 
@@ -51,23 +51,23 @@
 	max-width: 370px;
 }
 
-.footer__center > i {
+.footer__center > #icon {
 	color: #b3b3b3;
 	font-size: 20px;
 }
 
-.footer__center > i:hover {
+.footer__center > #icon:hover {
 	color: white;
 	cursor: pointer;
 }
 
-.footer__center > i:nth-child(3) {
+.footer__center > #icon:nth-child(3) {
 	color: white;
 	font-size: 30px;
 	transition: all 0.2s ease-in-out;
 }
 
-.footer__center > i:nth-child(3):hover {
+.footer__center > #icon:nth-child(3):hover {
 	scale: 1.2;
 }
 
@@ -90,13 +90,13 @@
 	cursor: pointer;
 }
 
-.footer__right > i {
+.footer__right > #icon {
 	color: #b3b3b3;
 	font-size: 20px;
 	margin-right: 10px;
 }
 
-.footer__right > i:hover {
+.footer__right > #icon:hover {
 	color: white;
 	cursor: pointer;
 }

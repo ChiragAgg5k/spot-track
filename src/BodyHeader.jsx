@@ -1,5 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./BodyHeader.css";
 import { useDataLayerValue } from "./DataLayer";
+import {
+	faArrowLeft,
+	faArrowRight,
+	faUser
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function BodyHeader() {
 	const default_playlist_icon =
@@ -36,8 +42,8 @@ export default function BodyHeader() {
 		<div className="playlist_header">
 			<div className="top_row">
 				<span>
-					<i className="fa-solid fa-arrow-left"></i>
-					<i className="fa-solid fa-arrow-right"></i>
+					<FontAwesomeIcon icon={faArrowLeft} id="icon" />
+					<FontAwesomeIcon icon={faArrowRight} id="icon" />
 				</span>
 				<div className="right_container">
 					<a
@@ -46,9 +52,9 @@ export default function BodyHeader() {
 						target="_blank"
 						rel="noreferrer">
 						<h3>Github</h3>
-						<i className="fa-solid fa-arrow-right"></i>
+						<FontAwesomeIcon icon={faArrowRight} id="icon" />
 					</a>
-					<i className="fa-solid fa-user"></i>
+					<FontAwesomeIcon icon={faUser} id="icon" />
 				</div>
 			</div>
 

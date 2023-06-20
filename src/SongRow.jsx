@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useDataLayerValue } from "./DataLayer";
 import "./SongRow.css";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 export default function SongRow({ sno, track, added_at }) {
 	const duration = msToMinutes(track.duration_ms);
@@ -68,7 +70,7 @@ export default function SongRow({ sno, track, added_at }) {
 				});
 			}}>
 			<p id="index">{sno + 1}</p>
-			<i className="fa-solid fa-play"></i>
+			<FontAwesomeIcon icon={faPlay} id="icon" />
 			<div className="song_name">
 				<img src={track.album.images[0].url} alt="" />
 				<p>{track.name}</p>

@@ -19,7 +19,7 @@
 	padding: 20px;
 }
 
-.body > .playlist_header > .top_row > span > i {
+.body > .playlist_header > .top_row > span > #icon {
 	padding: 8px;
 	font-size: 15px;
 	border-radius: 50%;
@@ -27,7 +27,7 @@
 	color: #565656;
 }
 
-.body > .playlist_header > .top_row > span > i:hover {
+.body > .playlist_header > .top_row > span > #icon:hover {
 	cursor: not-allowed;
 }
 
@@ -57,19 +57,19 @@
 	font-size: 15px;
 }
 
-.body > .playlist_header > .top_row > .right_container > i {
+.body > .playlist_header > .top_row > .right_container > #icon {
 	border-radius: 50%;
 	padding: 10px;
 	background-color: #181818;
 	font-size: 15px;
 }
 
-.body > .playlist_header > .top_row > .right_container > i:hover {
+.body > .playlist_header > .top_row > .right_container > #icon:hover {
 	cursor: pointer;
 	background-color: #282828;
 }
 
-.body > .playlist_header > .top_row > span > i:first-child {
+.body > .playlist_header > .top_row > span > #icon:first-child {
 	margin-right: 10px;
 }
 

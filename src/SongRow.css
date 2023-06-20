@@ -4,21 +4,17 @@
 	grid-template-rows: 1fr;
 	align-items: center;
 
-	/* vertical padding */
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding: 15px;
 	color: #a7a7a7;
-	padding-left: 10px;
-	padding-right: 10px;
 	border-radius: 5px;
 	transition: 0.2s ease-in;
 }
 
-.song_row > i {
+.song_row > #icon {
 	display: none;
 }
 
-.song_row:hover > i {
+.song_row:hover > #icon {
 	display: block;
 }
 
@@ -33,6 +29,9 @@
 
 .song_row > p {
 	font-size: 0.9rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .song_row > .song_name {

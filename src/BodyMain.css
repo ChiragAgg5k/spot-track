@@ -10,7 +10,7 @@
 	margin-left: 20px;
 }
 
-.play-pause_row > i {
+.play-pause_row > #icon {
 	font-size: 4rem;
 	color: #65d46e;
 	background-color: black;
@@ -19,7 +19,7 @@
 	transition: all 0.2s ease-in-out;
 }
 
-.play-pause_row > i:hover {
+.play-pause_row > #icon:hover {
 	cursor: pointer;
 	scale: 1.1;
 }

@@ -1,6 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./BodyMain.css";
 import { useDataLayerValue } from "./DataLayer";
 import SongRow from "./SongRow";
+import {
+	faCirclePause,
+	faCirclePlay,
+	faClock
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function BodyMain() {
 	const [{ tracks, playing }, dispatch] = useDataLayerValue();
@@ -9,23 +15,27 @@ export default function BodyMain() {
 		<div className="body_main">
 			<div className="play-pause_row">
 				{playing ? (
-					<i
-						className="fa-solid fa-circle-pause"
+					<FontAwesomeIcon
+						icon={faCirclePause}
+						id="icon"
 						onClick={() => {
 							dispatch({
 								type: "SET_PLAYING",
 								playing: false
 							});
-						}}></i>
+						}}
+					/>
 				) : (
-					<i
-						className="fa-solid fa-circle-play"
+					<FontAwesomeIcon
+						icon={faCirclePlay}
+						id="icon"
 						onClick={() => {
 							dispatch({
 								type: "SET_PLAYING",
 								playing: true
 							});
-						}}></i>
+						}}
+					/>
 				)}
 				<p>...</p>
 			</div>
@@ -35,7 +45,7 @@ export default function BodyMain() {
 				<p>Title</p>
 				<p id="album">Album</p>
 				<p id="dateAdded">Date Added</p>
-				<i className="fa-solid fa-clock"></i>
+				<FontAwesomeIcon icon={faClock} id="icon" />
 			</div>
 			<div className="divider"></div>
 
