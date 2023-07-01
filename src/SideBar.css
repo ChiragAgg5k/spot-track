@@ -55,8 +55,23 @@
 	color: #b3b3b3;
 }
 
-.sidebar__bottom > h2 {
-	margin: 20px;
-	color: #fff;
-	font-size: 20px;
+.sidebar__bottom > .header {
+	display: flex;
+	align-items: center;
+	margin: 18px;
+	transition: 0.2s ease-in-out;
+}
+
+.sidebar__bottom > .header:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.sidebar__bottom > .header > h2 {
+	font-size: 18px;
+}
+
+.sidebar__bottom > .header > #icon {
+	font-size: 22px;
+	margin-right: 10px;
 }

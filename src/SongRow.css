@@ -1,7 +1,6 @@
 .song_row {
 	display: grid;
 	grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
-	grid-template-rows: 1fr;
 	align-items: center;
 
 	padding: 15px;

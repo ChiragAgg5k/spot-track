@@ -2,7 +2,11 @@ import { useDataLayerValue } from "./DataLayer";
 import PlayList from "./PlayList";
 import "./SideBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+	faHouse,
+	faMagnifyingGlass,
+	faBook
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function SideBar() {
 	const [{ playLists }, dispatch] = useDataLayerValue();
@@ -30,7 +34,10 @@ export default function SideBar() {
 				</div>
 			</div>
 			<div className="sidebar__bottom">
-				<h2>Your playlists</h2>
+				<div className="header">
+					<FontAwesomeIcon icon={faBook} id="icon" />
+					<h2>Your playlists</h2>
+				</div>
 				{playLists?.items?.map((p) => {
 					return <PlayList key={p.id} playList={p} />;
 				})}

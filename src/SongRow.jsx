@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useDataLayerValue } from "./DataLayer";
 import "./SongRow.css";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 
 export default function SongRow({ sno, track, added_at }) {
 	const duration = msToMinutes(track.duration_ms);
@@ -53,6 +53,23 @@ export default function SongRow({ sno, track, added_at }) {
 					return;
 				}
 
+				if (item.src === track.preview_url) {
+					if (item.paused) {
+						item.play();
+						dispatch({
+							type: "SET_PLAYING",
+							playing: true
+						});
+					} else {
+						item.pause();
+						dispatch({
+							type: "SET_PLAYING",
+							playing: false
+						});
+					}
+					return;
+				}
+
 				item.pause();
 				item.src = track.preview_url;
 				item.play();
@@ -70,7 +87,13 @@ export default function SongRow({ sno, track, added_at }) {
 				});
 			}}>
 			<p id="index">{sno + 1}</p>
-			<FontAwesomeIcon icon={faPlay} id="icon" />
+			{track.preview_url !== null &&
+			item.src === track.preview_url &&
+			item.paused === false ? (
+				<FontAwesomeIcon icon={faPause} id="icon" />
+			) : (
+				<FontAwesomeIcon icon={faPlay} id="icon" />
+			)}
 			<div className="song_name">
 				<img src={track.album.images[0].url} alt="" />
 				<p>{track.name}</p>
