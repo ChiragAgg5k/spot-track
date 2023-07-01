@@ -38,7 +38,15 @@ export default function PlayList({ playList }) {
 					alt=""
 				/>
 			)}
-			<p>{playList.name}</p>
+			<div className="playlist__details">
+				<h4>{playList.name}</h4>
+				<p>
+					{playList.owner.display_name}{" "}
+					{playList.tracks.total === 1
+						? "• 1 song"
+						: `• ${playList.tracks.total} songs`}
+				</p>
+			</div>
 		</div>
 	);
 }
