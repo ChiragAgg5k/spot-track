@@ -9,7 +9,8 @@ export const initialState = {
 	},
 	token: null,
 	tracks: [],
-	selectedPlayList: null
+	selectedPlayList: null,
+	followedArtists: []
 };
 
 const reducer = (state, action) => {
@@ -69,6 +70,12 @@ const reducer = (state, action) => {
 			return {
 				...state,
 				playing: action.playing
+			};
+
+		case "SET_FOLLOWED_ARTISTS":
+			return {
+				...state,
+				followedArtists: action.followedArtists
 			};
 
 		default:

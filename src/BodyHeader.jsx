@@ -8,14 +8,16 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function BodyHeader() {
-	const default_playlist_icon =
-		"https://marketplace.canva.com/EAEdeiU-IeI/1/0/1600w/canva-purple-and-red-orange-tumblr-aesthetic-chill-acoustic-classical-lo-fi-playlist-cover-jGlDSM71rNM.jpg";
+	const [{ selectedPlayList, tracks, user }] = useDataLayerValue();
 
-	const [{ selectedPlayList, tracks }] = useDataLayerValue();
-	let title = selectedPlayList?.name ? selectedPlayList.name : "Playlist";
+	const default_playlist_icon = user?.images[0]
+		? user?.images[0].url
+		: "./Spotify_logo_without_text.svg";
+
+	let title = selectedPlayList?.name ? selectedPlayList.name : "Home";
 	let owner = selectedPlayList?.owner
 		? selectedPlayList.owner.display_name
-		: "No owner";
+		: user?.display_name;
 	let numberOfSongs = selectedPlayList?.tracks
 		? selectedPlayList.tracks.total
 		: 0;
@@ -59,7 +61,18 @@ export default function BodyHeader() {
 			</div>
 
 			<div className="playlist">
-				<img src={image} alt="" />
+				{image === default_playlist_icon ? (
+					<img
+						src={image}
+						alt="Album cover"
+						style={{
+							backgroundColor: "#181818",
+							padding: "1rem"
+						}}
+					/>
+				) : (
+					<img src={image} alt="Album cover" />
+				)}
 				<div className="playlist_text">
 					<h4>Playlist</h4>
 					<h1>{title}</h1>

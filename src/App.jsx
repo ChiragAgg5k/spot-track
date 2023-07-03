@@ -38,6 +38,14 @@ function App() {
 					playLists: playLists
 				});
 			});
+
+			spotify.getMyTopArtists().then((followedArtists) => {
+				console.log(followedArtists);
+				dispatch({
+					type: "SET_FOLLOWED_ARTISTS",
+					followedArtists: followedArtists
+				});
+			});
 		}
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps

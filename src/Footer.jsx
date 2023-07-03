@@ -30,10 +30,7 @@ function Footer() {
 					</>
 				) : (
 					<>
-						<img
-							src="https://marketplace.canva.com/EAEdeiU-IeI/1/0/1600w/canva-purple-and-red-orange-tumblr-aesthetic-chill-acoustic-classical-lo-fi-playlist-cover-jGlDSM71rNM.jpg"
-							alt=""
-						/>
+						<img src="./Spotify_logo_without_text.svg" alt="" />
 						<div className="song">
 							<h1>Song Name</h1>
 							<h2>Artist Name</h2>
