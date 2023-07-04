@@ -40,7 +40,6 @@ function App() {
 			});
 
 			spotify.getMyTopArtists().then((followedArtists) => {
-				console.log(followedArtists);
 				dispatch({
 					type: "SET_FOLLOWED_ARTISTS",
 					followedArtists: followedArtists

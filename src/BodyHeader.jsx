@@ -74,14 +74,20 @@ export default function BodyHeader() {
 					<img src={image} alt="Album cover" />
 				)}
 				<div className="playlist_text">
-					<h4>Playlist</h4>
+					{selectedPlayList ? <h4>Playlist</h4> : <></>}
 					<h1>{title}</h1>
 					<div className="info">
 						<p>{owner}</p>
-						<p>·</p>
-						<p>{numberOfSongs} songs</p>
-						<p id="duration_dot">·</p>
-						<p id="duration">about {finalDuration}</p>
+						{selectedPlayList ? (
+							<>
+								<p>·</p>
+								<p>{numberOfSongs} songs</p>
+								<p id="duration_dot">·</p>
+								<p id="duration">about {finalDuration}</p>
+							</>
+						) : (
+							<></>
+						)}
 					</div>
 				</div>
 			</div>

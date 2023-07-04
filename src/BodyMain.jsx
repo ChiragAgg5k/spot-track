@@ -78,6 +78,10 @@ export default function BodyMain() {
 											alt={item.name}
 											className="artist_image"
 										/>
+										<FontAwesomeIcon
+											icon={faCirclePlay}
+											className="play_button"
+										/>
 										<p
 											style={{
 												marginTop: "4px"
