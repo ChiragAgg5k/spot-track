@@ -5,7 +5,21 @@ import "./PlayList.css";
 export default function PlayList({ playList }) {
 	const [, dispatch] = useDataLayerValue();
 	const playLists = document.querySelectorAll(".playList");
-	const thisPlayList = document.getElementById(playList.id);
+
+	// let mounted = false;
+	// useEffect(() => {
+	// 	if (!mounted) {
+	// 		thisPlayList = document.getElementById(playList.id);
+	// 		mounted = true;
+	// 	}
+	// }, [playLists]);
+
+	function select() {
+		playLists.forEach((playList) => {
+			playList.classList.remove("selected");
+		});
+		document.getElementById(playList.id).classList.add("selected");
+	}
 
 	return (
 		<div
@@ -24,11 +38,7 @@ export default function PlayList({ playList }) {
 					});
 				});
 
-				playLists.forEach((playList) => {
-					playList.classList.remove("selected");
-				});
-
-				thisPlayList?.classList.add("selected");
+				select();
 			}}>
 			{playList.images[0] ? (
 				<img src={playList.images[0]?.url} alt="" />
