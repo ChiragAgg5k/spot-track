@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56d286e5-82dd-4e6f-9c06-8d750eba6542" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Spotify_logo_without_text.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Body.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BodyHeader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BodyHeader.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BodyMain.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BodyMain.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataLayer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SideBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SideBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SongRow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SongRow.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Spotify_Logo_CMYK_Black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Spotify_Logo_CMYK_White.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login_logic.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ChiragAgg5k"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ChiragAgg5k/spot-clone.git",
+    "accountId": "5033d324-707c-45aa-bc2d-eea1d3ee89c6"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2gVUcZPWAd5daSE2U6apL3PMLs7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/chiragagg5k/Desktop/Coding_Stuff/spot-clone",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/chiragagg5k/Desktop/Coding_Stuff/spot-clone/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56d286e5-82dd-4e6f-9c06-8d750eba6542" name="Changes" comment="" />
+      <created>1715782319129</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715782319129</updated>
+      <workItem from="1715782320299" duration="621000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
